@@ -1,0 +1,142 @@
+@import './variables.scss';
+
+.about {
+  padding: 50px 18px;
+
+  .title {
+    text-align: center;
+    @include font($fontPNr, 400, 24px);
+    text-transform: uppercase;
+    letter-spacing: 7.68px;
+    color: $colorWhite;
+    margin-bottom: 44px;
+  }
+
+  .list {
+    padding: 0;
+    list-style: none;
+    &__item {
+      margin-bottom: 19px;
+
+      &__link {
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include font($fontPNr, 400, 14px);
+
+        .num {
+          @include font($fontPNr, 400, 28px);
+          line-height: 1;
+        }
+        .def {
+          width: 30px;
+          height: 2px;
+          display: block;
+          background-color: $colorWhite;
+          margin: 0 17px;
+        }
+      }
+
+      &.active {
+        .list__item__link {
+          font-weight: 700;
+          .num {
+            color: $colorAccent;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    position: relative;
+    padding: 25px;
+    background-color: $colorCard;
+    margin-bottom: 60px;
+
+    .control {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+
+      .prev,
+      .next {
+        border: none;
+        background: none;
+        color: $colorAccent;
+        transition: all 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .img--wrp {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 14px;
+      color: $colorWhite;
+      @include font($fontPNr, 700, 18px);
+    }
+
+    &__description {
+      color: $colorText;
+      margin: 0;
+      @include font($fontPNr, 400, 15px);
+    }
+
+    &-box {
+    }
+  }
+
+  .contactAs {
+    @include font($fontPNr, 400, 24px);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 7.68px;
+    color: $colorWhite;
+    margin-bottom: 29px;
+  }
+
+  .contactForm {
+    &__field {
+      width: 100%;
+      // margin-bottom: 20px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $colorBorder;
+      padding: 14px 0;
+      color: $colorWhite;
+
+      &:nth-of-type(3) {
+        margin-bottom: 25px;
+      }
+
+      &:valid {
+        border-color: $colorAccent;
+      }
+    }
+
+    .submit {
+      padding: 15px 48px;
+      border-radius: 20px;
+      box-shadow: 0 11px 23px 1px rgba(35, 179, 254, 0.2);
+      border: none;
+      background-color: $colorAccent;
+      line-height: 16.1px;
+      @include font($fontPNr, 700, 16px);
+      color: $colorWhite;
+    }
+  }
+}

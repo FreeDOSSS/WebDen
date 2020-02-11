@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+.copyrate {
+  text-align: center;
+  @include font($fontPNr, 400, 14px);
+  margin: 0;
+  padding-bottom: 22px;
+}

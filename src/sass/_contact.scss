@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+.contact {
+  background-image: url(../images/smoke_footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  &__title {
+    @include font($fontPNr, 400, 18px);
+    text-transform: uppercase;
+    color: $colorWhite;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    width: 50%;
+    background: none;
+    &-box {
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      @include font($fontPNr, 600, 15px);
+      color: $colorWhite;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    &__link {
+      @include font($fontPNr, 400, 16px);
+      color: $colorWhite;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        fill: $colorWhite;
+        margin-right: 5px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $colorAccent;
+      }
+    }
+
+    .icon--wrp {
+      display: flex;
+      justify-content: space-around;
+      font-size: 6px;
+      svg {
+        width: 15px;
+        height: 15px;
+        fill: $colorWhite;
+
+        &:hover {
+          fill: $colorAccent;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/css/uikit.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style="display: none;"
+    >
+      <symbol viewbox="0 0 24 24" id="vk">
+        <path
+          class="st0"
+          d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"
+        />
+      </symbol>
+      <symbol viewbox="0 0 24 24" id="skype">
+        <path
+          d="M22.987 13.966c1.357-7.765-5.416-14.412-13.052-12.979-5.821-3.561-12.503 3.226-8.935 9.029-1.387 7.747 5.384 14.48 13.083 13.01 5.832 3.536 12.493-3.26 8.904-9.06zm-10.603 5.891c-3.181 0-6.378-1.448-6.362-3.941.005-.752.564-1.442 1.309-1.442 1.873 0 1.855 2.795 4.837 2.795 2.093 0 2.807-1.146 2.807-1.944 0-2.886-9.043-1.117-9.043-6.543 0-2.938 2.402-4.962 6.179-4.741 3.602.213 5.713 1.803 5.917 3.289.101.971-.542 1.727-1.659 1.727-1.628 0-1.795-2.181-4.6-2.181-1.266 0-2.334.528-2.334 1.674 0 2.395 8.99 1.005 8.99 6.276-.001 3.039-2.423 5.031-6.041 5.031z"
+        />
+      </symbol>
+    </svg>
+    <div id="offcanvas" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+      </div>
+    </div>
+
+    <nav class="container--fluid nav--wrp">
+      <div class="container nav">
+        <div class="logo--wrp">
+          <a href="#" class="logo-link">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <button
+          uk-toggle="target: #offcanvas"
+          type="button"
+          class="toggle-offcanvas"
+        >
+          <span uk-icon="icon: menu"></span>
+        </button>
+      </div>
+    </nav>
+    <header
+      class="container--fluid header--wrp"
+      style=" background-image: url('./images/smoke.png');"
+    >
+      <div class="container header">
+        <h1 class="title">
+          DEVELOPMENT AND PROMOTION By
+          <a href="#" target="_blank" class="link">
+            WEBDEN.STUDIO
+          </a>
+        </h1>
+
+        <form class="form" style="background-image: url(./images/bg.png);">
+          <div class="label--wrp">
+            <label for="query" class="label"></label>
+            <span class="icon" uk-icon="icon: search"></span>
+            <input type="text" id="query" placeholder="Создать сайт..." />
+          </div>
+          <button type="submit" class="submit">Заказать сайт</button>
+          <span class="seeDown"></span>
+        </form>
+
+        <p class="read-next">Листай дальше</p>
+      </div>
+    </header>
+    <main class="container--fluid">
+      <div class="container about">
+        <h2 class="title">Почему мы</h2>
+        <ul class="list">
+          <li class="list__item active">
+            <a href="#" class="list__item__link" data-page="1">
+              <span class="num"> 01</span> <span class="def"></span> Адоптивный
+              дизайн</a
+            >
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__item__link" data-page="2">
+              <span class="num"> 02</span> <span class="def"></span> Внутрення
+              SEO оптимизация</a
+            >
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__item__link" data-page="3">
+              <span class="num"> 03</span>
+              <span class="def"></span> Инструменнты маркетинга</a
+            >
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__item__link" data-page="4">
+              <span class="num"> 04</span> <span class="def"></span> Заботливая
+              тех поддержка</a
+            >
+          </li>
+        </ul>
+
+        <div class="card-box">
+          <div class="card">
+            <div class="control">
+              <button class="prev"><span uk-icon="chevron-left"></span></button>
+              01/04
+              <button class="next">
+                <span uk-icon="chevron-right"></span>
+              </button>
+            </div>
+            <div class="img--wrp">
+              <img src="./images/card_img.png" alt="Card Img" />
+            </div>
+
+            <h3 class="card__title">Адаптивный дизайн</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <h2 class="contactAs">Связаться с нами</h2>
+        <form class="contactForm">
+          <input
+            type="text"
+            class="contactForm__field"
+            name="name"
+            placeholder="Имя"
+            required
+          />
+          <input
+            type="text"
+            class="contactForm__field"
+            name="email"
+            placeholder="Телефон или e-mail"
+            required
+          />
+          <input
+            type="text"
+            class="contactForm__field"
+            name="message"
+            placeholder="Сообщение"
+            required
+          />
+          <input type="submit" value="Отправить" class="submit" />
+        </form>
+      <div class=" contact">
+        <h2 class="contact__title">Контакты</h2>
+        <div class="card-box uk-child-width-1-2" uk-grid>
+          <div class="card">
+            <h4 class="card__title">E-MAIL:</h4>
+            <a class="card__link" href="mailto:info@webden.sudio"
+              >info@webden.sudio</a
+            >
+          </div>
+          <div class="card">
+            <h4 class="card__title">Телефон:</h4>
+            <a class="card__link" href="tel:0638639749">+38 063 863 97 49</a>
+          </div>
+          <div class="card">
+            <h4 class="card__title"><span uk-icon="skype"></span> Наш Skype</h4>
+            <a class="card__link" href="skype:webden.studio">
+              <svg class="icon">
+                <use href="#skype"></use>
+              </svg>
+              webden.studio</a
+            >
+          </div>
+          <div class="card">
+            <h4 class="card__title">Социальные сети:</h4>
+            <div class="icon--wrp">
+              <a href="#">
+                <svg class="icon">
+                  <use href="#vk"></use>
+                </svg>
+              </a>
+              <a href="#" uk-icon="icon: facebook"></a>
+              <a href="#" uk-icon="icon: twitter"></a>
+              <a href="#" uk-icon="icon: dribbble"></a>
+              <a href="#" uk-icon="icon: behance"></a>
+              <a href="#" uk-icon="icon: instagram"></a>
+            </div>
+          </div>
+        </div>
+        <p class="copyrate">© Webden.Studio 2020. Все права защищены</p>
+      </div>
+    </main>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit-icons.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
