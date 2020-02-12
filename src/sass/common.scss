@@ -8,6 +8,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: none;
 }
 
 body {
@@ -30,4 +31,18 @@ textarea {
   &--fluid {
     width: 100%;
   }
+}
+
+@media (min-width: 640px) {
+  .container {
+    min-width: 640px;
+    width: auto;
+    max-width: 1170px;
+  }
+}
+
+.wrapper {
+  background-image: url(../images/smoke_footer.png);
+  background-repeat: no-repeat;
+  background-position: center 316px;
 }
