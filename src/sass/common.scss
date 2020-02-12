@@ -48,5 +48,14 @@ textarea {
 
   .wrapper {
     padding-bottom: 70px;
+    background-position-y: 100px;
+  }
+}
+
+.uk-grid {
+  // padding: 0;
+  margin: 0;
+  > * {
+    padding: 0;
   }
 }

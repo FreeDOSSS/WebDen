@@ -14,6 +14,8 @@
   .card {
     // width: 50%;
     background: none;
+    padding-bottom: 20px;
+    margin: 0;
     &-box {
       margin-bottom: 50px;
     }
@@ -39,6 +41,12 @@
       &:hover {
         text-decoration: none;
         color: $colorAccent;
+      }
+    }
+
+    &.social {
+      > div {
+        margin: 0;
       }
     }
 
@@ -70,12 +78,15 @@
 
   .contactForm {
     &__field {
-      width: 100%;
-      // margin-bottom: 20px;
+      // width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
       background: none;
       border: none;
       border-bottom: 1px solid $colorBorder;
-      padding: 14px 0;
+      padding-top: 14px;
+      padding-bottom: 14px;
       color: $colorWhite;
 
       &:nth-of-type(3) {
@@ -103,8 +114,36 @@
 @media (min-width: 640px) {
   .contact {
     .grid {
+      align-items: flex-start;
       .contactForm {
         order: 2;
+        align-items: flex-start;
+        padding-top: 50px;
+
+        &__field {
+          $w: 30px;
+          font-size: 18px;
+          margin-bottom: 30px;
+
+          &[name='name'] {
+            width: calc(50% - 15px);
+            margin-right: auto;
+          }
+
+          &[name='email'] {
+            width: calc(50% - 15px);
+            margin-left: auto;
+          }
+        }
+
+        .submit {
+          margin: 0;
+          margin-left: auto;
+          letter-spacing: 0.9px;
+          font-size: 18px;
+          padding: 18px 44px;
+          border-radius: 26px;
+        }
       }
       .contacts {
         order: 1;
@@ -120,6 +159,7 @@
     }
 
     .card {
+      margin-bottom: 10px;
       &__title {
         font-size: 19px;
       }
@@ -128,6 +168,7 @@
       }
     }
     .social {
+      padding-left: 0;
       .card__title {
         font-size: 23px;
       }
