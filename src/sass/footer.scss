@@ -5,4 +5,11 @@
   @include font($fontPNr, 400, 14px);
   margin: 0;
   padding-bottom: 22px;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .copyrate {
+    text-align: left;
+  }
 }

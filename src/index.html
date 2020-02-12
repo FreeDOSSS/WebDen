@@ -65,7 +65,7 @@
             </a>
           </h1>
 
-          <form class="form" style="">
+          <form class="form">
             <div class="label--wrp">
               <label for="query" class="label"></label>
               <span class="icon" uk-icon="icon: search"></span>
@@ -83,131 +83,150 @@
       <main class="container--fluid">
         <div class="container about">
           <h2 class="title">Почему мы</h2>
-          <ul class="list">
-            <li class="list__item active">
-              <a href="#" class="list__item__link" data-page="1">
-                <span class="num"> 01</span>
-                <span class="def"></span> Адоптивный дизайн</a
-              >
-            </li>
-            <li class="list__item">
-              <a href="#" class="list__item__link" data-page="2">
-                <span class="num"> 02</span> <span class="def"></span> Внутрення
-                SEO оптимизация</a
-              >
-            </li>
-            <li class="list__item">
-              <a href="#" class="list__item__link" data-page="3">
-                <span class="num"> 03</span>
-                <span class="def"></span> Инструменнты маркетинга</a
-              >
-            </li>
-            <li class="list__item">
-              <a href="#" class="list__item__link" data-page="4">
-                <span class="num"> 04</span>
-                <span class="def"></span> Заботливая тех поддержка</a
-              >
-            </li>
-          </ul>
 
-          <div class="card-box">
-            <div class="card">
-              <div class="control">
-                <button class="prev">
-                  <span uk-icon="chevron-left"></span>
-                </button>
-                01/04
-                <button class="next">
-                  <span uk-icon="chevron-right"></span>
-                </button>
-              </div>
-              <div class="img--wrp">
-                <img src="./images/card_img.png" alt="Card Img" />
-              </div>
+          <div uk-grid>
+            <ul class="list uk-width-1-1 uk-width-1-3@s">
+              <li class="list__item active">
+                <a href="#" class="list__item__link" data-page="1">
+                  <span class="num"> 01</span>
+                  <span class="def"></span> Адоптивный дизайн</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__item__link" data-page="2">
+                  <span class="num"> 02</span>
+                  <span class="def"></span> Внутрення SEO оптимизация</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__item__link" data-page="3">
+                  <span class="num"> 03</span>
+                  <span class="def"></span> Инструменнты маркетинга</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__item__link" data-page="4">
+                  <span class="num"> 04</span>
+                  <span class="def"></span> Заботливая тех поддержка</a
+                >
+              </li>
+            </ul>
 
-              <h3 class="card__title">Адаптивный дизайн</h3>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+            <div class="card-box uk-width-1-1 uk-width-2-3@s">
+              <div class="card" uk-grid>
+                <div class="control">
+                  <button class="prev">
+                    <span uk-icon="chevron-left"></span>
+                  </button>
+                  01/04
+                  <button class="next">
+                    <span uk-icon="chevron-right"></span>
+                  </button>
+                </div>
+                <div class="img--wrp uk-width-1-1 uk-width-1-6@s ">
+                  <img src="./images/card_img.png" alt="Card Img" />
+                </div>
+                <div class="uk-width-1-1 uk-width-5-6@s">
+                  <h3 class="card__title">Адаптивный дизайн</h3>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <h2 class="contactAs">Связаться с нами</h2>
-          <form class="contactForm">
-            <input
-              type="text"
-              class="contactForm__field"
-              name="name"
-              placeholder="Имя"
-              required
-            />
-            <input
-              type="text"
-              class="contactForm__field"
-              name="email"
-              placeholder="Телефон или e-mail"
-              required
-            />
-            <input
-              type="text"
-              class="contactForm__field"
-              name="message"
-              placeholder="Сообщение"
-              required
-            />
-            <input type="submit" value="Отправить" class="submit" />
-          </form>
         </div>
       </main>
+
       <div class="container--fluid">
         <div class="container contact">
-          <h2 class="contact__title">Контакты</h2>
-          <div class="card-box uk-child-width-1-2" uk-grid>
-            <div class="card">
-              <h4 class="card__title">E-MAIL:</h4>
-              <a class="card__link" href="mailto:info@webden.sudio"
-                >info@webden.sudio</a
-              >
-            </div>
-            <div class="card">
-              <h4 class="card__title">Телефон:</h4>
-              <a class="card__link" href="tel:0638639749">+38 063 863 97 49</a>
-            </div>
-            <div class="card">
-              <h4 class="card__title">
-                <span uk-icon="skype"></span> Наш Skype
-              </h4>
-              <a class="card__link" href="skype:webden.studio">
-                <svg class="icon">
-                  <use href="#skype"></use>
-                </svg>
-                webden.studio</a
-              >
-            </div>
-            <div class="card">
-              <h4 class="card__title">Социальные сети:</h4>
-              <div class="icon--wrp">
-                <a href="#">
-                  <svg class="icon">
-                    <use href="#vk"></use>
-                  </svg>
-                </a>
-                <a href="#" uk-icon="icon: facebook"></a>
-                <a href="#" uk-icon="icon: twitter"></a>
-                <a href="#" uk-icon="icon: dribbble"></a>
-                <a href="#" uk-icon="icon: behance"></a>
-                <a href="#" uk-icon="icon: instagram"></a>
+          <h2 class="contactAs">Связаться с нами</h2>
+          <div class="grid uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
+            <form class="contactForm">
+              <input
+                type="text"
+                class="contactForm__field"
+                name="name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                type="text"
+                class="contactForm__field"
+                name="email"
+                placeholder="Телефон или e-mail"
+                required
+              />
+              <input
+                type="text"
+                class="contactForm__field"
+                name="message"
+                placeholder="Сообщение"
+                required
+              />
+              <input type="submit" value="Отправить" class="submit" />
+            </form>
+
+            <div class="contacts">
+              <h2 class="contact__title">Контакты</h2>
+              <div class="card-box" uk-grid>
+                <div class="card uk-width-1-2 uk-width-1-1@s">
+                  <h4 class="card__title">E-MAIL:</h4>
+                  <a class="card__link" href="mailto:info@webden.sudio"
+                    >info@webden.sudio</a
+                  >
+                </div>
+                <div class="card uk-width-1-2 uk-width-1-3@s">
+                  <h4 class="card__title">Телефон:</h4>
+                  <a class="card__link" href="tel:0638639749"
+                    >+38 063 863 97 49</a
+                  >
+                </div>
+                <div class="card uk-width-1-2 uk-width-1-3@s">
+                  <h4 class="card__title">
+                    <span uk-icon="skype"></span> Наш Skype
+                  </h4>
+                  <a class="card__link" href="skype:webden.studio">
+                    <svg class="icon">
+                      <use href="#skype"></use>
+                    </svg>
+                    webden.studio</a
+                  >
+                </div>
+                <div class="card uk-width-1-2 uk-width-1-1@s social" uk-grid>
+                  <h4 class="card__title uk-width-1-1 uk-width-1-2@s">
+                    Социальные сети:
+                  </h4>
+                  <div class="icon--wrp uk-width-1-1 uk-width-1-2@s">
+                    <a href="#">
+                      <svg class="icon">
+                        <use href="#vk"></use>
+                      </svg>
+                    </a>
+                    <a href="#" uk-icon="icon: facebook"></a>
+                    <a href="#" uk-icon="icon: twitter"></a>
+                    <a href="#" uk-icon="icon: dribbble"></a>
+                    <a href="#" uk-icon="icon: behance"></a>
+                    <a href="#" uk-icon="icon: instagram"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <p class="copyrate">© Webden.Studio 2020. Все права защищены</p>
         </div>
       </div>
+      <footer class="container--fluid">
+        <p class="copyrate container">
+          © Webden.Studio 2020. Все права защищены
+        </p>
+      </footer>
     </div>
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.1/js/uikit.min.js"></script>
